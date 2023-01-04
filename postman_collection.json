@@ -1,0 +1,392 @@
+{
+	"info": {
+		"_postman_id": "be1f7b71-b03c-42c5-9183-e4782f273f26",
+		"name": "Challenges",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "656046"
+	},
+	"item": [
+		{
+			"name": "NaNLabs",
+			"item": [
+				{
+					"name": "localhost",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000"
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "laod categories",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/load_categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"load_categories"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "laod categories",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/load_categories",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"load_categories"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/2.2.2 Python/3.9.13"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 04 Jan 2023 21:26:51 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1243"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"categories\": [\n        {\n            \"id\": \"63b5c9a87eabf59db1b96c32\",\n            \"name\": \"\",\n            \"color\": \"green\"\n        },\n        {\n            \"id\": \"63b5c9a87eabf59db1b96c36\",\n            \"name\": \"\",\n            \"color\": \"yellow\"\n        },\n        {\n            \"id\": \"63b5c9a87eabf59db1b96c37\",\n            \"name\": \"\",\n            \"color\": \"orange\"\n        },\n        {\n            \"id\": \"63b5c9a87eabf59db1b96c3b\",\n            \"name\": \"\",\n            \"color\": \"red\"\n        },\n        {\n            \"id\": \"63b5c9a87eabf59db1b96c3d\",\n            \"name\": \"\",\n            \"color\": \"purple\"\n        },\n        {\n            \"id\": \"63b5c9a87eabf59db1b96c3e\",\n            \"name\": \"\",\n            \"color\": \"blue\"\n        },\n        {\n            \"id\": \"63b5ed7e5e7c0e04f5da145c\",\n            \"name\": \"rest\",\n            \"color\": \"black\"\n        },\n        {\n            \"id\": \"63b5ef19c3e6aa007c863e23\",\n            \"name\": \"issue\",\n            \"color\": \"purple\"\n        },\n        {\n            \"id\": \"63b5ef1a83f8990277cd82e3\",\n            \"name\": \"bug\",\n            \"color\": \"red\"\n        },\n        {\n            \"id\": \"63b5ef1b53bd3101b0f5e781\",\n            \"name\": \"task\",\n            \"color\": \"blue\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "laod lists",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/load_lists",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"load_lists"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "laod lists",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/load_lists",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"load_lists"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/2.2.2 Python/3.9.13"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 04 Jan 2023 21:43:15 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "555"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"lists\": [\n        {\n            \"id\": \"63b5f2b2d070a705dfcbd881\",\n            \"name\": \"TODO\",\n            \"closed\": false,\n            \"idBoard\": \"63b5c9a85cc60b007c6b4026\",\n            \"pos\": 32767.5,\n            \"subscribed\": false,\n            \"softLimit\": null\n        },\n        {\n            \"id\": \"63b5cabe33655401b12f7b97\",\n            \"name\": \"TO DO\",\n            \"closed\": false,\n            \"idBoard\": \"63b5c9a85cc60b007c6b4026\",\n            \"pos\": 65535,\n            \"subscribed\": false,\n            \"softLimit\": null\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Create card - issue",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"type\": \"issue\",\n    \"title\": \"Send message\",\n    \"description\": \"Let pilots send messages to Central\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000"
+						}
+					},
+					"response": [
+						{
+							"name": "Create card - issue",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"type\": \"issue\",\n    \"title\": \"Send message\",\n    \"description\": \"Let pilots send messages to Central\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000"
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/2.2.2 Python/3.9.13"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 04 Jan 2023 22:47:03 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1672"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"63b601e7971e2003335af3f0\",\n    \"badges\": {\n        \"attachmentsByType\": {\n            \"trello\": {\n                \"board\": 0,\n                \"card\": 0\n            }\n        },\n        \"location\": false,\n        \"votes\": 0,\n        \"viewingMemberVoted\": false,\n        \"subscribed\": false,\n        \"fogbugz\": \"\",\n        \"checkItems\": 0,\n        \"checkItemsChecked\": 0,\n        \"checkItemsEarliestDue\": null,\n        \"comments\": 0,\n        \"attachments\": 0,\n        \"description\": true,\n        \"due\": null,\n        \"dueComplete\": false,\n        \"start\": null\n    },\n    \"checkItemStates\": [],\n    \"closed\": false,\n    \"dueComplete\": false,\n    \"dateLastActivity\": \"2023-01-04T22:47:03.701Z\",\n    \"desc\": \"Let pilots send messages to Central\",\n    \"descData\": {\n        \"emoji\": {}\n    },\n    \"due\": null,\n    \"dueReminder\": null,\n    \"email\": null,\n    \"idBoard\": \"63b5c9a85cc60b007c6b4026\",\n    \"idChecklists\": [],\n    \"idList\": \"63b5f2b2d070a705dfcbd881\",\n    \"idMembers\": [],\n    \"idMembersVoted\": [],\n    \"idShort\": 3,\n    \"idAttachmentCover\": null,\n    \"labels\": [],\n    \"idLabels\": [],\n    \"manualCoverAttachment\": false,\n    \"name\": \"Send message\",\n    \"pos\": 49152,\n    \"shortLink\": \"Cehskf2s\",\n    \"shortUrl\": \"https://trello.com/c/Cehskf2s\",\n    \"start\": null,\n    \"subscribed\": false,\n    \"url\": \"https://trello.com/c/Cehskf2s/3-send-message\",\n    \"cover\": {\n        \"idAttachment\": null,\n        \"color\": null,\n        \"idUploadedBackground\": null,\n        \"size\": \"normal\",\n        \"brightness\": \"dark\",\n        \"idPlugin\": null\n    },\n    \"isTemplate\": false,\n    \"cardRole\": null,\n    \"attachments\": [],\n    \"stickers\": [],\n    \"limits\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "Create card - bug",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"type\": \"bug\",\n    \"description\": \"Trello API is not working\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000"
+						}
+					},
+					"response": [
+						{
+							"name": "Create card - bug",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"type\": \"bug\",\n    \"description\": \"Trello API is not working\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000"
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/2.2.2 Python/3.9.13"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 04 Jan 2023 22:50:00 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1918"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"63b60298afa224052764c33e\",\n    \"badges\": {\n        \"attachmentsByType\": {\n            \"trello\": {\n                \"board\": 0,\n                \"card\": 0\n            }\n        },\n        \"location\": false,\n        \"votes\": 0,\n        \"viewingMemberVoted\": false,\n        \"subscribed\": true,\n        \"fogbugz\": \"\",\n        \"checkItems\": 0,\n        \"checkItemsChecked\": 0,\n        \"checkItemsEarliestDue\": null,\n        \"comments\": 0,\n        \"attachments\": 0,\n        \"description\": true,\n        \"due\": null,\n        \"dueComplete\": false,\n        \"start\": null\n    },\n    \"checkItemStates\": [],\n    \"closed\": false,\n    \"dueComplete\": false,\n    \"dateLastActivity\": \"2023-01-04T22:50:00.166Z\",\n    \"desc\": \"Trello API is not working\",\n    \"descData\": {\n        \"emoji\": {}\n    },\n    \"due\": null,\n    \"dueReminder\": null,\n    \"email\": null,\n    \"idBoard\": \"63b5c9a85cc60b007c6b4026\",\n    \"idChecklists\": [],\n    \"idList\": \"63b5f2b2d070a705dfcbd881\",\n    \"idMembers\": [\n        \"587e1465d8b0983434595ef3\"\n    ],\n    \"idMembersVoted\": [],\n    \"idShort\": 4,\n    \"idAttachmentCover\": null,\n    \"labels\": [\n        {\n            \"id\": \"63b5ef1a83f8990277cd82e3\",\n            \"idBoard\": \"63b5c9a85cc60b007c6b4026\",\n            \"name\": \"bug\",\n            \"color\": \"red\"\n        }\n    ],\n    \"idLabels\": [\n        \"63b5ef1a83f8990277cd82e3\"\n    ],\n    \"manualCoverAttachment\": false,\n    \"name\": \"bug-Trello-41\",\n    \"pos\": 65536,\n    \"shortLink\": \"yCIfnFe9\",\n    \"shortUrl\": \"https://trello.com/c/yCIfnFe9\",\n    \"start\": null,\n    \"subscribed\": true,\n    \"url\": \"https://trello.com/c/yCIfnFe9/4-bug-trello-41\",\n    \"cover\": {\n        \"idAttachment\": null,\n        \"color\": null,\n        \"idUploadedBackground\": null,\n        \"size\": \"normal\",\n        \"brightness\": \"dark\",\n        \"idPlugin\": null\n    },\n    \"isTemplate\": false,\n    \"cardRole\": null,\n    \"attachments\": [],\n    \"stickers\": [],\n    \"limits\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "Create card - task",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"type\": \"task\",\n    \"title\": \"Clean the Rocket\",\n    \"category\": \"Maintenance\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000"
+						}
+					},
+					"response": [
+						{
+							"name": "Create card - task",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"type\": \"task\",\n    \"title\": \"Clean the Rocket\",\n    \"category\": \"Maintenance\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000"
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/2.2.2 Python/3.9.13"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 04 Jan 2023 22:46:20 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1909"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"63b601bcbd0c9f00b34ceaef\",\n    \"badges\": {\n        \"attachmentsByType\": {\n            \"trello\": {\n                \"board\": 0,\n                \"card\": 0\n            }\n        },\n        \"location\": false,\n        \"votes\": 0,\n        \"viewingMemberVoted\": false,\n        \"subscribed\": true,\n        \"fogbugz\": \"\",\n        \"checkItems\": 0,\n        \"checkItemsChecked\": 0,\n        \"checkItemsEarliestDue\": null,\n        \"comments\": 0,\n        \"attachments\": 0,\n        \"description\": false,\n        \"due\": null,\n        \"dueComplete\": false,\n        \"start\": null\n    },\n    \"checkItemStates\": [],\n    \"closed\": false,\n    \"dueComplete\": false,\n    \"dateLastActivity\": \"2023-01-04T22:46:20.519Z\",\n    \"desc\": \"\",\n    \"descData\": {\n        \"emoji\": {}\n    },\n    \"due\": null,\n    \"dueReminder\": null,\n    \"email\": null,\n    \"idBoard\": \"63b5c9a85cc60b007c6b4026\",\n    \"idChecklists\": [],\n    \"idList\": \"63b5f2b2d070a705dfcbd881\",\n    \"idMembers\": [\n        \"587e1465d8b0983434595ef3\"\n    ],\n    \"idMembersVoted\": [],\n    \"idShort\": 1,\n    \"idAttachmentCover\": null,\n    \"labels\": [\n        {\n            \"id\": \"63b60190cc2af301564b9bc8\",\n            \"idBoard\": \"63b5c9a85cc60b007c6b4026\",\n            \"name\": \"Maintenance\",\n            \"color\": \"blue\"\n        }\n    ],\n    \"idLabels\": [\n        \"63b60190cc2af301564b9bc8\"\n    ],\n    \"manualCoverAttachment\": false,\n    \"name\": \"Clean the Rocket\",\n    \"pos\": 16384,\n    \"shortLink\": \"ysh58J8M\",\n    \"shortUrl\": \"https://trello.com/c/ysh58J8M\",\n    \"start\": null,\n    \"subscribed\": true,\n    \"url\": \"https://trello.com/c/ysh58J8M/1-clean-the-rocket\",\n    \"cover\": {\n        \"idAttachment\": null,\n        \"color\": null,\n        \"idUploadedBackground\": null,\n        \"size\": \"normal\",\n        \"brightness\": \"dark\",\n        \"idPlugin\": null\n    },\n    \"isTemplate\": false,\n    \"cardRole\": null,\n    \"attachments\": [],\n    \"stickers\": [],\n    \"limits\": {}\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
